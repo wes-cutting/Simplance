@@ -50,12 +50,10 @@ public class Customer {
 	@Column(nullable=false)
 	private Date Birthday;
 	
-	@OneToOne
-	@JoinColumn(name="address_id")
+	@ManyToOne(optional=false)
 	private Address address;
 	
-	@OneToOne
-	@JoinColumn(name="phone_id")
+	@ManyToOne(optional=false)
 	private Phone phone;
 	
 	@OneToOne
