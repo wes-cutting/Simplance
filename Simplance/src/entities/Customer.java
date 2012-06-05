@@ -50,12 +50,13 @@ public class Customer {
 	@Column(nullable=false)
 	private Date Birthday;
 	
-	@OneToOne
-	@JoinColumn(name="address_id")
+	@Column(nullable=false)
+	private boolean IsSmoker;
+	
+	@ManyToOne(optional=false)
 	private Address address;
 	
-	@OneToOne
-	@JoinColumn(name="phone_id")
+	@ManyToOne(optional=false)
 	private Phone phone;
 	
 	@OneToOne
@@ -182,6 +183,16 @@ public class Customer {
 	public void SetBirthDay(Date birthday)
 	{
 		Birthday = birthday;
+	}
+	
+	public boolean GetIsSmoker()
+	{
+		return IsSmoker;
+	}
+	
+	public void SetIsSmoker(boolean isSmoker)
+	{
+		IsSmoker = isSmoker;
 	}
 	
 	public Address GetAddress()

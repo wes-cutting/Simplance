@@ -1,9 +1,13 @@
 package entities;
 
+import java.util.List;
+import java.util.Vector;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Phone {
@@ -23,6 +27,9 @@ public class Phone {
 	
 	@Column(length=5)
 	private String Work_Ext;
+	
+	@OneToMany(mappedBy="phone")
+	private List<Customer> customers;
 	
 	public Phone(){}
 	
@@ -74,5 +81,14 @@ public class Phone {
 	public void SetWork_Ext(String workExt)
 	{
 		Work_Ext = workExt;
+	}
+	
+	public List<Customer> getCustomers() {
+		if (customers == null) customers = new Vector<>();
+		return customers;
+	}
+
+	public void setCustomers(List<Customer> customers) {
+		this.customers = customers;
 	}
 }

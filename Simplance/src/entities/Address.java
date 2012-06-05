@@ -1,9 +1,13 @@
 package entities;
 
+import java.util.List;
+import java.util.Vector;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Address {
@@ -23,6 +27,9 @@ public class Address {
 	
 	@Column(nullable=false, length=5)
 	private String Zip;
+	
+	@OneToMany(mappedBy="address")
+	private List<Customer> customers;
 	
 	public Address(){}
 	
@@ -74,5 +81,14 @@ public class Address {
 	public void SetZip(String zip)
 	{
 		Zip = zip;
+	}
+	
+	public List<Customer> getCustomers() {
+		if (customers == null) customers = new Vector<>();
+		return customers;
+	}
+
+	public void setCustomers(List<Customer> customers) {
+		this.customers = customers;
 	}
 }
