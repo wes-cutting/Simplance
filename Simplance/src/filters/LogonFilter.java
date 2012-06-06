@@ -14,7 +14,7 @@ import javax.servlet.annotation.ServletSecurity.TransportGuarantee;
 
 
 @ServletSecurity(httpMethodConstraints = {@HttpMethodConstraint(value = "GET",
-		rolesAllowed = {"admins"}, transportGuarantee = TransportGuarantee.CONFIDENTIAL)})
+		rolesAllowed = {"agent"}, transportGuarantee = TransportGuarantee.CONFIDENTIAL)})
 		
 @WebFilter("/LogonFilter")
 public class LogonFilter implements Filter {
