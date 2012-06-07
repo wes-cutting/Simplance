@@ -7,6 +7,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 public class Note {
@@ -15,9 +17,11 @@ public class Note {
 	@GeneratedValue
 	private int Id;
 	
+	@Temporal(TemporalType.TIMESTAMP)
 	@Column(nullable=false)
 	private Date Date_Created;
 	
+	@Temporal(TemporalType.TIMESTAMP)
 	@Column(nullable=false)
 	private Date Date_Last_Modified;
 	

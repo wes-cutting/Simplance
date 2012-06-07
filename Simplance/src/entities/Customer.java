@@ -12,6 +12,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 public class Customer {
@@ -44,9 +46,11 @@ public class Customer {
 	@Column(nullable=false)
 	private boolean IsContracted;
 	
-	@Column(nullable=false)
+	@Temporal(TemporalType.TIMESTAMP)
+	@Column(nullable=false, updatable=false)
 	private Date First_Contact_Date;
 	
+	@Temporal(TemporalType.TIMESTAMP)
 	@Column(nullable=false)
 	private Date Birthday;
 	
