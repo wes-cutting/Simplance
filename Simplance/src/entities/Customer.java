@@ -119,6 +119,11 @@ public class Customer {
 		LastName = lastName;
 	}
 	
+	public String GetFullName()
+	{
+		return LastName + ", " + FirstName;
+	}
+	
 	public String GetGender()
 	{
 		return Gender;
