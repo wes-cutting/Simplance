@@ -50,6 +50,7 @@ public class Customer {
 	@Column(nullable=false, updatable=false)
 	private Date First_Contact_Date;
 	
+	@Temporal(TemporalType.TIMESTAMP)
 	@Column(nullable=false)
 	private Date Birthday;
 	
