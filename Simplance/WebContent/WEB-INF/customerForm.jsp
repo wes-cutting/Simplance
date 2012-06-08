@@ -42,7 +42,7 @@
 		<td><input type="text" name="email" value="${customer.email }"></td>
 	</tr>
 	<tr>
-		<td>Marital Status</td>
+		<td>Martial Status</td>
 		<td>
 			<select name="maritalstatus">
 				<option ${customer.marital_status eq 'Single' ? 'selected' : '' } >Single</option>
