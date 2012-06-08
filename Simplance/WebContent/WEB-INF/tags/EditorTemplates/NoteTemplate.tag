@@ -7,16 +7,16 @@
 	
 	<div class="editor-field">
 		<label>Date Created:</label>
-		<input type="text" name="date" value="${note.date_Created}"/>		
+		<input type="date" name="date" value="${note.date_Created}"/>		
 	</div><div class="editor-field">
-		<label>Cell Phone Number:</label>
-		<input type="text" name="cell" value="${phone.cell}"/>		
+		<label>Date Last Modified:</label>
+		<input type="date" name="dlm" value="${note.date_Last_Modified}"/>		
 	</div><div class="editor-field">
-		<label>Cell Phone Number:</label>
-		<input type="text" name="cell" value="${phone.cell}"/>		
+		<label>Subject:</label>
+		<input type="text" name="cell" value="${note.cell}"/>		
 	</div><div class="editor-field">
-		<label>Cell Phone Number:</label>
-		<input type="text" name="cell" value="${phone.cell}"/>		
+		<label>Body:</label>
+		<textarea>${note.body }</textarea>	
 	</div>
 	
 </fieldset>

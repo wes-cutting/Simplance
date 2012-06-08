@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="z" tagdir="/WEB-INF/tags/EditorTemplates" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -30,11 +31,11 @@
 	</tr>
 	<tr>
 		<td>Address</td>
-		<td><input type="text" name="address" value="${customer.address }"></td>
+		<z:AddressTemplate address="${customer.address }"></z:AddressTemplate>
 	</tr>
 	<tr>
 		<td>Phone</td>
-		<td><input type="text" name="phone" value="${customer.phone }"></td>
+		<z:PhoneTemplate phone="${customer.phone }"></z:PhoneTemplate>
 	</tr>
 	<tr>
 		<td>Email</td>
@@ -53,7 +54,7 @@
 	</tr>
 	<tr>
 		<td>Smoker</td>
-		<td><input type="checkbox" name="issmoker" value="${customer.issmoke }"></td>
+		<td><input type="checkbox" name="issmoker" value="${customer.issmoker }"></td>
 	</tr>
 	<tr>
 		<td>Active</td>
