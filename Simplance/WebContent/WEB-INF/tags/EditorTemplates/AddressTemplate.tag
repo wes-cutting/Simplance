@@ -21,9 +21,5 @@
 		<label>ZIP-Code:</label>
 		<input type="text" name="zip" value="${address.zip}"/>		
 	</div>
-	<div class="editor-field">
-		<label>Cell Phone Number:</label>
-		<input type="text" name="cell" value="${phone.cell}"/>		
-	</div>
 	
 </fieldset>

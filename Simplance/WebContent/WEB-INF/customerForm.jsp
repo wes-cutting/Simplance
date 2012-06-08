@@ -15,7 +15,7 @@
 <table>
 	<tr>
 		<td>Last Name</td>
-		<td><input type="text" name="lastName" value="${customer.lastname }"></td>
+		<td><input type="text" name="lastname" value="${customer.lastname }"></td>
 	</tr>
 	<tr>
 		<td>First Name</td>
