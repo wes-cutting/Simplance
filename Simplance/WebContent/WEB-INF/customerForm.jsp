@@ -82,7 +82,7 @@
 	<tr>
 		<ul>
 			<c:forEach var="note" items="${customer.notes}">
-					<c:url value="/GetNotes" var="get">
+					<c:url value="/GetNote" var="get">
 						<c:param name="id" value="${note.id }" />
 					</c:url>
 					<li><a href="${get}">${note.subject}</a></li>

@@ -32,4 +32,9 @@ public class NotesManager {
 		return search;
 	}
 	
+	public Note byId(int id)
+	{
+		return em.find(Note.class, id);
+	}
+	
 }

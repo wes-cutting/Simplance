@@ -18,7 +18,7 @@ public class Note {
 	private int Id;
 	
 	@Temporal(TemporalType.TIMESTAMP)
-	@Column(nullable=false)
+	@Column(nullable=false, updatable = false)
 	private Date Date_Created;
 	
 	@Temporal(TemporalType.TIMESTAMP)
