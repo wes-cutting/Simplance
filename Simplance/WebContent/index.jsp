@@ -5,9 +5,9 @@
 <html>
   <head>
     	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    	<title>GlassFish JSP Page</title>
+    	<title>Simplance</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <h1>Welcome to Simplance</h1>
   </body>
 </html> 
