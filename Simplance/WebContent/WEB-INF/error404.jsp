@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<img alt="404" src="error404.jsp"/>
+	<img alt="404" src="${pageContext.request.contextPath }/error404.jpg" align="middle"/>
 	<p>At times like this, we suggest just going back <a href="index.jsp">HOME</a> </p>
 </body>
 </html>

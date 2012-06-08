@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<img alt="500" src="error500.jpg" align="middle">
+	<img alt="500" src="${pageContext.request.contextPath }/error500.jpg" align="middle">
 	<p>The page you have requested is not available. Please go back and try your request again!</p>
 </body>
 </html>
